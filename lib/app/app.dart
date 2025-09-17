@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:my_first_app/views/home_view.dart';
+import 'package:google_fonts/google_fonts.dart';
+import 'package:my_first_app/app/home_view.dart';
 
 class MyApp extends StatelessWidget {
   const MyApp({super.key});
@@ -9,7 +10,10 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       debugShowCheckedModeBanner: false, // Set this to false
       title: "Flutter Learn",
-      theme: ThemeData(primarySwatch: Colors.deepOrange),
+      theme: ThemeData(
+        primarySwatch: Colors.deepOrange,
+        fontFamily: GoogleFonts.dmSans().fontFamily,
+       ),
       home: HomeView(),
     );
   }
